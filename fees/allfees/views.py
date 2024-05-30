@@ -1,3 +1,9 @@
-from django.shortcuts import render
+from rest_framework.response import Response
+from rest_framework.views import APIView
+from scraper import FeesScraper
 
-# Create your views here.
+class AllFeesView(APIView):
+    
+    def get(self, request):
+        fees = FeesScraper()
+        return Response(fees.getAll())
