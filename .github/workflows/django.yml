@@ -27,4 +27,4 @@ jobs:
         pip install -r fees/requirements.txt
     - name: Run Tests
       run: |
-        python manage.py runserver
+        python fees/manage.py runserver
