@@ -34,5 +34,5 @@ jobs:
     steps:
     - name: Deploy to Production
       run: |
-        python fees/manage.py runserver
+        python ./fees/manage.py runserver
        
